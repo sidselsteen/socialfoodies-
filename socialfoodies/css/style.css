@@ -1,0 +1,406 @@
+html body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 250px;
+
+
+}
+
+#burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+}
+
+#main-nav a {
+    display: block;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+#main-nav a:hover {
+    color: #E0FFFF;
+    /*find rigtig farve*/
+}
+
+.active {
+    color: #E0FFFF;
+    /*find rigtig farve*/
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+nav {
+    background-color: white;
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    border-bottom: 1px solid grey;
+    opacity: 0.9;
+    position: relative;
+    display: flex;
+}
+
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 100px;
+    font-family: impact;
+    font-size: 15px;
+
+}
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: phosphate;
+}
+
+
+
+.voresbutikker {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E0FFFF;
+
+}
+
+
+.sortiment {
+    display: flex;
+
+}
+
+p {
+    font-family: helvetica neue;
+}
+
+.baggrund {
+    background-color: #E0FFFF;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+
+.findos {
+    background-color:  #E0FFFF; 
+     
+}
+
+ .button {
+        background-color: black; 
+        border: none; 
+        padding: 0.1em 0.5em;
+        cursor: hand; 
+     transition: background .4s ease-in, transform .25s ease-in-out; 
+        
+    }
+
+    .button:hover {
+        background-color: #E0FFFF; 
+    }
+
+.find-os-links {
+     text-decoration: none;
+    color: black; 
+    font-family: impact;
+    
+}
+    
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #331a00;
+    color: white;
+}
+
+.footer1 {
+    font-family: phosphate;
+}
+
+
+
+@media all and (max-width: 599px) {
+
+    header {
+        display: block;
+    }
+
+    .logo {
+        width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #burger {
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #burger label {
+        display: block;
+        font-size: 3em;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 64.031px;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav li {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+    }
+
+
+    #main-nav a {
+        margin: 0;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+        display: flex;
+
+    }
+
+  
+    
+   .forside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    
+    
+    
+    #top_img {
+        position: relative;
+        background-size: cover;
+        height: 400px;
+        width: 400px;
+
+    }
+
+    .doinggood {
+        position: absolute;
+        top: 250px;
+        left: 0;
+        width: 100%;
+        color: white;
+        font-size: 50px
+    }
+
+    #bot_img {
+        background-size: cover;
+        height: 150px;
+        width: 400px;
+    }
+
+
+
+
+    .voresbutikker a {
+        width: 40%;
+        margin: auto;
+        text-align: center;
+        padding: 4px;
+        text-decoration: none;
+        color: black;
+        font-family: phosphate;
+    }
+    
+    .voresbutikker {
+        margin-left: 30px;
+        margin-right: 30px; 
+    }
+
+
+
+    .sortiment-container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .sortiment {
+        position: relative;
+        text-align: center;
+    }
+
+    .sortiment img {
+        position: relative;
+        background-size: cover;
+        height: 200px;
+        width: 400px;
+    }
+
+    .sortiment h1 {
+        font-family: phosphate;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 50px;
+    }
+
+    h2 {
+        font-family: phosphate;
+        text-align: center;
+    }
+    
+    h3 {
+           font-family: impact;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px; 
+    }
+    
+   
+    
+   .baggrund1 {
+        background-color: #E0FFFF; 
+        padding-top: 1px; 
+        padding-bottom: 1px;
+        text-align: center; 
+       margin-left: 40px; 
+       margin-right: 40px;
+       
+        
+    }
+    
+    .findos {
+       background-color: #E0FFFF; 
+        padding-top: 4px; 
+        padding-bottom: 4px;
+        text-align: center; 
+       margin-left: 0px; 
+       margin-right: 0px;
+    }
+    
+   
+    .find-os {
+        margin-left: 30px;
+        margin-right: 30px; 
+    }
+
+
+    footer {
+        width: auto;
+        margin: auto;
+        text-align: center;
+        padding: 4px;
+        text-decoration: none;
+        flex-direction: column;
+
+    }
+    
+ 
+
+    .moenster {
+        width: 400px;
+
+    }
+
+
+
+
+
+    @media all and (min-width: 600px) {
+
+        /*HEADER NAV*/
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #logo-burger {
+            margin: 0;
+        }
+
+        #logo {
+            margin-top: .2em;
+        }
+
+        #main-nav {
+            justify-content: space-between;
+            width: 100%;
+            margin: 0;
+        }
+
+        #main-nav a {
+            margin: 0 .5em;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        label {
+            display: none;
+        }
+
+    }
+
+
+
+
+
+
+
+    /*MEDIA QUERY LAPTOP AND ABOVE*/
+
+    @media all and (min-width: 1024px) {
+
+        /*HEADER*/
+        header {
+            flex-direction: row;
+        }
+        
+  
+        
+        
+        
+    }
